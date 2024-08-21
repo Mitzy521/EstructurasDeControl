@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pelota</title>
+    <style>
+        .pelota {
+            width: 50px;
+            height: 50px;
+            background-color: #578cc9;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            animation: rodar 5s linear ;
+        }
+        @keyframes rodar {
+            0% { left: 0; transform: translateY(-50%) rotate(0deg); }
+            100% { left: 100%; transform: translateY(-50%) rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="pelota"></div>
+</body>
+</html>
